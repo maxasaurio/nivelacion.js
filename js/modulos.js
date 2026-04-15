@@ -1,21 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
-  
-  const header = document.querySelector("#header");
-  header.innerHTML = `
-    <h2>Mi Sitio Web</h2>
-  `;
+const header = '<strong><i> Mi primer pagina con modulos </i></strong>';
 
-  const nav = document.querySelector("#nav");
-  nav.innerHTML = `
-    <ul>
-      <li><a href="index.html">INICIO</a></li>
-      <li><a href="Productos.html">PRODUCTOS</a></li>
-      <li><a href="servicios.html">SERVICIOS</a></li>
-    </ul>
-  `;
+const nav = `<ul>
+            <li> <a href="index.html">inicio</a></li>
+            <li> <a href="productos.html">productos</a></li>
+            <li> <a href="servicios.html">servicios</a></li>
+        </ul>`;
 
-  const footer = document.querySelector("#footer");
-  footer.innerHTML = `
-    <p>&copy; 2026 Mi Sitio Web - Todos los derechos reservados</p>
-  `;
-});
+const footer = 'maximo bresciani';
+
+document.querySelector('header').innerHTML= header;
+document.querySelector('#menu').innerHTML= nav;
+document.querySelector('.Pie').innerHTML= 'maximo bresciani';
